@@ -75,8 +75,8 @@ set_max_delay -from [get_pins core/mc/*/inst/div_clk_rst_r1_reg/C] -to [get_pins
 set_max_delay -from [get_pins core/mc/*/inst/div_clk_rst_r1_reg/C] -to [get_pins {core/afu_mac/ui/gmc/*/CM_XFIFO/gMtrue.RMETAW/meta_1q_reg[*]/D}] 2.500
 set_max_delay -from [get_pins core/mc/*/inst/div_clk_rst_r1_reg/C] -to [get_pins {core/afu_mac/ui/gmc/*/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[0]/D}] 2.500
 set_max_delay -from [get_pins core/mc/ddr4_p1/inst/div_clk_rst_r1_reg/C] -to [get_pins {core/afu_mac/ui/gmc/MC1/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[0]/D}] 2.500
-set_max_delay -from [get_pins core/mc/*/inst/div_clk_rst_r1_reg_replica/C] -to [get_pins {core/afu_mac/ui/gmc/*/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[*]/D}] 2.500
-set_max_delay -from [get_pins core/mc/ddr4_p0/inst/div_clk_rst_r1_reg_replica/C] -to [get_pins {core/afu_mac/ui/gmc/MC0/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[0]/D}] 2.500
+#set_max_delay -from [get_pins core/mc/*/inst/div_clk_rst_r1_reg_replica/C] -to [get_pins {core/afu_mac/ui/gmc/*/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[*]/D}] 2.500
+#set_max_delay -from [get_pins core/mc/ddr4_p0/inst/div_clk_rst_r1_reg_replica/C] -to [get_pins {core/afu_mac/ui/gmc/MC0/WD_XFIFO/gMtrue.RMETAW/meta_1q_reg[0]/D}] 2.500
 
 set_max_delay -from [get_pins {core/afu_mac/ui/gmc/*/CM_XFIFO/gMtrue.Meta_Wa_q_reg[*]/C}] -to [get_pins {core/afu_mac/ui/gmc/*/CM_XFIFO/gMtrue.WAMETA/meta_1q_reg[*]/D}] 3.500
 set_max_delay -from [get_pins {core/afu_mac/ui/gmc/*/RD_XFIFO/gMtrue.Meta_Ra_q_reg[*]/C}] -to [get_pins {core/afu_mac/ui/gmc/*/RD_XFIFO/gMtrue.RAMETA/meta_1q_reg[*]/D}] 3.500

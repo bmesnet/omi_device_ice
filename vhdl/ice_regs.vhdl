@@ -27,7 +27,7 @@ Use Ieee.Std_logic_1164.All;
 Use Ieee.Numeric_std.All;
 Use Ieee.Std_logic_arith.All;
 Use Work.Ice_func.All;
-use Work.meta_pkg.all; --removed to complete compile
+-- use Work.meta_pkg.all; --removed to complete compile
 
 
 ENTITY ice_regs IS
@@ -202,6 +202,7 @@ ARCHITECTURE ice_regs OF ice_regs IS
   signal trap7_in_d : STD_ULOGIC_VECTOR(0 to 63);
   signal trap7_in_q : STD_ULOGIC_VECTOR(0 to 63);
 
+  constant FIRE_ICE_META_VERSION  : std_ulogic_vector(31 downto 0) := x"FADAFADA";
   constant cfg2_reset : std_ulogic_vector(63 downto 0) := FIRE_ICE_META_VERSION&x"106000DC";
 
   --Add the debug busses to the ILA Trace
